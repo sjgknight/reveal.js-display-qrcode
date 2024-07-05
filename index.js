@@ -8,6 +8,12 @@
 
   var containers = document.querySelectorAll('div.reveal-js-qrcode');
   containers.forEach(function (e) {
+    // get the text in the div
+    if (e.textContent != '') {
+      url = e.textContent;
+      // delete the text in the div
+      e.textContent = '';
+    }
     e.style.display = 'flex';
     e.style.flexDirection = 'column';
     e.style.alignItems = 'center';

@@ -8,8 +8,8 @@ Clone this repo to your plugins folder in your reveal.js presentation.
 Add
 
 ```
-{ src: 'plugin/reveal.js-qrcode/qrcode.min.js'},
-{ src: 'plugin/reveal.js-qrcode/index.js'}
+{ src: 'plugin/reveal.js-display-qrcode/qrcode.min.js'},
+{ src: 'plugin/reveal.js-display-qrcode/index.js'}
 ```
 
 to your `dependencies` in `Reveal.initialize`.
@@ -25,8 +25,8 @@ If you additionally want to display the link to the URL below the QR Code, simpl
 Add the following code to your `dependencies` in `Reveal.initialize`:
 
 ```html
-{ src: 'plugin/reveal.js-qrcode/qrcode.min.js'}, { src:
-'plugin/reveal.js-qrcode/index.js', callback: function() {
+{ src: 'plugin/reveal.js-display-qrcode/qrcode.min.js'}, { src:
+'plugin/reveal.js-display-qrcode/index.js', callback: function() {
 setCustomQRCodeUrl("https://example.com");} }
 ```
 
